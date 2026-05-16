@@ -67,3 +67,16 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Mac Files
+.DS_Store
+
+# Swift Files
+.swift
+
+# Obj-C Files
+.mm
+.m
+
+# Obsidian Files
+.obsidian
