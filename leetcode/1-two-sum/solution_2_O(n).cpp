@@ -5,7 +5,11 @@
 // Use a hash table to keep track of indices.
 //
 // Time Complexity: O(n)
+// Since each element is processed at most once.
+// Note: umap.find() is average-case O(1).
+//
 // Space Complexity: O(n)
+// Since umap potentially grows to nums.size().
 //
 class Solution {
 public:

@@ -8,8 +8,10 @@
 // until a pair that matches the target sum is found.
 //
 // Time Complexity: O(n^2)
-// Space Complexity: O(1)
+// Since nums is iterated again for every iteration.
 //
+// Space Complexity: O(1)
+// Since the algorithm only uses a constant amount of extra memory.
 //
 class Solution {
 public:
