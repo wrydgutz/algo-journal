@@ -8,4 +8,5 @@ inline void print(std::vector<int>& nums) {
         if (i) std::cout << ' ';
         std::cout << nums[i];
     }
+    std::cout << std::endl;
 }

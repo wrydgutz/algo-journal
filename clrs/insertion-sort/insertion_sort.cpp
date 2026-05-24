@@ -5,7 +5,7 @@
 // Based on the INSERTION-SORT algorithm from
 // Introduction to Algorithms (CLRS),
 // Chapter 2.1: Insertion Sort.
-void insertion_sort(std::vector<int>& nums) {
+void insertion_sort(std::vector<int>& nums, bool ascending) {
 
     // Traverse nums but starting from the 2nd number.
     // The 1st element is already considered sorted by itself.
@@ -18,7 +18,9 @@ void insertion_sort(std::vector<int>& nums) {
         // shifting larger elements one position to the right
         // until the correct insertion position for key is found.
         int j = i - 1;
-        while (j >= 0 && nums[j] > key) {
+        while (j >= 0) {
+            if (ascending && nums[j] < key) break;
+            if (!ascending && nums[j] >= key) break;
             nums[j + 1] = nums[j];
             j--;
         }
